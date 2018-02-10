@@ -5,8 +5,10 @@ require_once 'VehicleBase.php';
 
 class car extends VehicleBase{
 
-    public function move($cars) {
-        echo $cars . ': moving<br>';
-    }
 
+
+    public function startEngine()
+    {
+return 'Car: start Engine';
+    }
 }

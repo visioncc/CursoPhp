@@ -2,18 +2,13 @@
 
 namespace Vehicles;
 require_once 'VehicleBase.php';
+
 class truck extends VehicleBase{
 
-    private $type;
 
-    public function __construct($ownername, $type)
+    public function startEngine()
     {
-        $this->type = $type;
-        parent::__construct($ownername);
-    }
-
-    public function move($trucks) {
-        echo $trucks . $this->type . ': moving<br>';
+        return 'Truck: start Engine';
     }
 
 

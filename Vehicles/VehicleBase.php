@@ -2,20 +2,37 @@
 
 namespace Vehicles;
 
-class VehicleBase
+abstract class VehicleBase
 {
-    private $owner ;
-    public function __construct($ownername)
+    private $owner;
+    private $type;
+    private static $count = 0;
+
+    public function __construct($ownername, $type)
     {
-        $this ->owner = $ownername;
+        $this->type = $type;
+        $this->owner = $ownername;
+        self::$count++;
+
     }
 
+
     public function move($cars) {
-        echo $cars . ': moving<br>';
+        echo $this->startEngine();
+        echo '<br>' . $cars . ': moving<br><br>';
     }
     public function GetOwner() {
 
         return $this->owner;
+    }
+    public function GetType() {
+
+        return $this->type;
+    }
+
+    public static function GetTotal() {
+
+        return self::$count;
     }
 
     /**
@@ -25,7 +42,10 @@ class VehicleBase
     {
         $this->owner = $owner;
     }
+
 }
+
+
 /**
  * Created by PhpStorm.
  * User: andy
