@@ -43,7 +43,9 @@ abstract class VehicleBase
         $this->owner = $owner;
     }
 
+    public abstract function startEngine();
 }
+
 
 
 /**
