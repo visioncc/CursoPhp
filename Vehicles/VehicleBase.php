@@ -4,7 +4,7 @@ namespace Vehicles;
 
 abstract class VehicleBase
 {
-    private $owner;
+    public $owner;
     private $type;
     private static $count = 0;
 

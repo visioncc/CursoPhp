@@ -25,4 +25,9 @@ $truck2->move('truck2');
 echo 'Total Trucks:' . Truck::GetTotal()  . '<br>';
 echo 'Total cars:' . Car::GetTotal()  . '<br>';
 
+$ser = serialize($car2);
+$newCar = unserialize($ser);
+
+echo 'NewCar Owner: ' . $newCar->getOwner() . '<br>';
+
 
