@@ -39,10 +39,11 @@ if ($result) {
     ?>
 <div class="container">
 
-    <h1>DataBases</h1>
+    <h1>Add user</h1>
     <ul>
         <li><a href="index.php">Home</a> </li>
-        <li><a href="list.php">List Users </a>
+        <li><a href="list.php">List Users </a></li>
+        <li><a href="update.php">Update User</a></li>
     </ul>
 </div>
 </nav>
