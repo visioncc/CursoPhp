@@ -18,6 +18,8 @@
         <li><a href="list.php">List Users</a> </li>
         <li><a href="add.php">Add User </a></li>
         <li><a href="update.php">Update User</a></li>
+        <li><a href="fake-login.php">FakeLogin</a></li>
+
     </ul>
 </div>
 </nav>
