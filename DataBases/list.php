@@ -39,14 +39,17 @@ $row = $queryResult->fetch(PDO::FETCH_ASSOC);
     <th>Name</th>
     <th>User</th>
     <th>Edit</th>
+    <th>Delete</th>
 </tr>
     <?php foreach($queryResult as $row):  ?>
 
     <tr>
         <td><?php echo $row['name']; ?></td>
         <td><?php echo $row['user']; ?></td>
-        <td><a href="update.php?id='<?php echo $row['id']  ?>'">Edit</a> </td>
-        <?php    ?>
+        <?php
+       echo '<td><a href="update.php?id=' . $row['id'] . '">Edit</a> </td>';
+       echo '<td><a href="delete.php?id=' . $row['id'] . '">Delete</a> </td>';
+           ?>
     </tr>
 
     <?php endforeach; ?>
