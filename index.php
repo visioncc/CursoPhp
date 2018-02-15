@@ -18,9 +18,10 @@
 <nav>
     <h1>CursoPhp</h1>
     <ul>
-    <li><a href="variables.php">1:0 Variables</a></li>
+    <li><a href="variables.php">1:0 SVariables</a></li>
     <li><a href="Vehicles/Index.php">2:0 POO</a></li>
         <li><a href="DataBases/index.php">3:0 DataBases</a></li>
+        <li><a href="blog/views/index.php">4:0 Blog</a></li>
     </ul>
 </nav>
 </div>
