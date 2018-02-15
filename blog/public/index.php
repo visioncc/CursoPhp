@@ -30,10 +30,7 @@ $router->controller('/admin', App\Controllers\Admin\indexController::class);
 
 $router->controller('/admin/create', App\Controllers\Admin\PostController::class);
 
-
 $router->controller('/admin/posts', App\Controllers\Admin\PostController::class);
-
-
 
 $router->controller('/', App\Controllers\indexController::class);
 

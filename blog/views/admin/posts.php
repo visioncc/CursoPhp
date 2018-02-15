@@ -20,7 +20,7 @@
 
         <div class="col-md-8">
             <h2>Posts</h2>
-            <a href="<?php BASE_URL; ?>create/" class="btn btn-primary">New Post</a>
+            <a href="<?php BASE_URL; ?>posts/create" class="btn btn-primary">New Post</a>
             <table class="table">
             <caption>Table content blogs</caption>
             <thead>
