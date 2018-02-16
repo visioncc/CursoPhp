@@ -14,6 +14,11 @@ class BaseController {
             'debug' => true,
             'cache' => false
         ]);
+
+        $this->templateEngine->addFilter(new \Twig_SimpleFilter('url', function ($path) {
+            return BASE_URL . $path;
+        } ));
+
     }
 
 
